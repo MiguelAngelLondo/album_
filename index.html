@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#f8f1e9">
   <title>For Lara, with love ♡</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -20,7 +22,7 @@
     ♫ ACTIVAR MÚSICA
   </button>
 
-  <!-- PORTADA DE PRUEBA -->
+  <!-- PORTADA -->
   <div class="intro" id="intro">
     <span class="eyebrow">A LITTLE SURPRISE FOR YOU</span>
     <h1 class="serif">For <em>Lara.</em></h1>
@@ -33,11 +35,30 @@
       </div>
     </div>
 
-    <p class="lock-message" id="lockMessage">¡Tu regalo está listo! ♡</p>
+    <p class="lock-message" id="lockMessage">
+      Tu sorpresa estará disponible en... ♡
+    </p>
 
-    <div class="countdown" id="countdown" hidden></div>
+    <div class="countdown" id="countdown">
+      <div>
+        <strong id="days">00</strong>
+        <span>DÍAS</span>
+      </div>
+      <div>
+        <strong id="hours">00</strong>
+        <span>HORAS</span>
+      </div>
+      <div>
+        <strong id="minutes">00</strong>
+        <span>MINUTOS</span>
+      </div>
+      <div>
+        <strong id="seconds">00</strong>
+        <span>SEGUNDOS</span>
+      </div>
+    </div>
 
-    <button class="open-button" id="openGiftBtn" type="button">
+    <button class="open-button" id="openGiftBtn" type="button" disabled>
       ABRIR MI REGALO ♡
     </button>
 
@@ -46,7 +67,7 @@
     </p>
   </div>
 
-  <!-- CONTENIDO VISIBLE -->
+  <!-- CONTENIDO PRINCIPAL -->
   <main id="main-content" hidden>
 
     <section class="hero">
@@ -99,7 +120,10 @@
         <figure class="photo-card"><img src="./fotos/foto-13.jpeg" alt="Un recuerdo juntos" loading="lazy"><figcaption>Qué bonito coincidir contigo.</figcaption></figure>
         <figure class="photo-card"><img src="./fotos/foto-14.jpg" alt="Un recuerdo juntos" loading="lazy"><figcaption>Y todavía quedan muchos más.</figcaption></figure>
       </div>
-      <p class="gallery-end serif">Cada foto guarda un poquito de nosotros. ♡</p>
+
+      <p class="gallery-end serif">
+        Cada foto guarda un poquito de nosotros. ♡
+      </p>
     </section>
 
     <section class="reasons">
@@ -109,6 +133,7 @@
         Hay cosas que quizá no te digo todos los días,
         pero que siempre llevo conmigo.
       </p>
+
       <div class="reason-list">
         <div class="reason"><span>01</span> Tu forma de ser.</div>
         <div class="reason"><span>02</span> La manera en que sonríes.</div>
@@ -123,21 +148,47 @@
     <section class="timeline">
       <span class="eyebrow">CHAPTER FOUR · OUR STORY</span>
       <h2 class="section-title serif">Little moments,<br>big memories.</h2>
-      <p class="section-description">No necesito que todos los días sean extraordinarios; me encanta poder compartir contigo los normales.</p>
+      <p class="section-description">
+        No necesito que todos los días sean extraordinarios;
+        me encanta poder compartir contigo los normales.
+      </p>
+
       <div class="timeline-list">
-        <article><span>♡</span><div><h3>Cuando coincidimos</h3><p>De todas las casualidades bonitas, conocerte siempre será una de mis favoritas.</p></div></article>
-        <article><span>♡</span><div><h3>Nuestros momentos</h3><p>Esos planes, conversaciones, risas y fotografías que ahora forman parte de nuestra historia.</p></div></article>
-        <article><span>♡</span><div><h3>Lo que viene</h3><p>Ojalá nos queden muchos lugares por conocer y recuerdos por guardar.</p></div></article>
+        <article>
+          <span>♡</span>
+          <div>
+            <h3>Cuando coincidimos</h3>
+            <p>De todas las casualidades bonitas, conocerte siempre será una de mis favoritas.</p>
+          </div>
+        </article>
+        <article>
+          <span>♡</span>
+          <div>
+            <h3>Nuestros momentos</h3>
+            <p>Esos planes, conversaciones, risas y fotografías que ahora forman parte de nuestra historia.</p>
+          </div>
+        </article>
+        <article>
+          <span>♡</span>
+          <div>
+            <h3>Lo que viene</h3>
+            <p>Ojalá nos queden muchos lugares por conocer y recuerdos por guardar.</p>
+          </div>
+        </article>
       </div>
     </section>
 
     <section class="letter-section">
       <span class="eyebrow">CHAPTER FIVE · JUST FOR YOU</span>
       <h2 class="section-title serif">A letter for Lara.</h2>
-      <p class="section-description">Hay algo que quería decirte y decidí guardarlo aquí.</p>
+      <p class="section-description">
+        Hay algo que quería decirte y decidí guardarlo aquí.
+      </p>
+
       <button class="envelope" id="envelope" type="button" aria-label="Abrir la carta">
         <span class="seal">♡</span>
       </button>
+
       <p class="eyebrow">PULSA EL SOBRE PARA ABRIRLO</p>
 
       <div class="letter" id="letter" hidden>
@@ -158,6 +209,7 @@
     </section>
 
     <footer>MADE WITH LOVE · 21.11.2026</footer>
+
   </main>
 
 </body>
